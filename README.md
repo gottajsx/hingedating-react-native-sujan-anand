@@ -34,7 +34,17 @@ To make font management smoother on Android, use this method:
 
     apply from: file("../../node_modules/react-native-vector-icons/fonts.gradle")
     ```
+## Snippets
 
+ES7 + React/Redux/React-Native Snippets
+```
+rnfes
+```
 
-
-
+## Geo-position
+```
+fetch(
+          https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&key=AIzaSyDJqEKwV49K0ycxK_os6f9ZgKuv6pJHINA,
+        )
+```
+*key*: Ce paramètre représente la clé API nécessaire pour authentifier la requête auprès de Google. Cette clé est fournie par Google lorsqu'un utilisateur s'inscrit à leur service d'API.
