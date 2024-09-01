@@ -34,6 +34,16 @@ To make font management smoother on Android, use this method:
 
     apply from: file("../../node_modules/react-native-vector-icons/fonts.gradle")
     ```
+
+## Backend
+
+```
+mkdir api
+cd api
+npm init
+```
+
+
 ## Snippets
 
 ES7 + React/Redux/React-Native Snippets
