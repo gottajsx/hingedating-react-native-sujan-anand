@@ -6,6 +6,7 @@
  */
 
 import React from 'react';
+import {ModalPortal} from 'react-native-modals';
 import {
   SafeAreaView,
   ScrollView,
@@ -23,7 +24,9 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-
+import Icon from 'react-native-vector-icons/FontAwesome';
+import StackNavigator from './navigation/StackNavigator';
+import {AuthProvider} from './AuthContext';
 
 function Section({children, title}) {
   const isDarkMode = useColorScheme() === 'dark';
@@ -57,14 +60,17 @@ function App() {
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
+  
 
   return (
-    <SafeAreaView>
-
-      <View>
-        <Text>Hinge Dating App</Text>
-      </View>
-    </SafeAreaView>
+    <>
+      <AuthProvider>
+        <>
+          <StackNavigator />
+          <ModalPortal />
+        </>
+      </AuthProvider>
+    </>
   );
 }
 
