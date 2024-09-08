@@ -43,6 +43,11 @@ cd api
 npm init
 ```
 
+Start the backend with:
+```
+yarn start
+```
+
 
 ## Snippets
 
@@ -58,3 +63,5 @@ fetch(
         )
 ```
 *key*: Ce paramètre représente la clé API nécessaire pour authentifier la requête auprès de Google. Cette clé est fournie par Google lorsqu'un utilisateur s'inscrit à leur service d'API.
+
+See link: https://developers.google.com/maps/documentation/javascript/get-api-key?hl=fr ("google api key maps" on google)
